@@ -12,7 +12,7 @@ data:
     url: $argocd-webhook-url
     headers:
     - name: x-api-key
-      value: $aws-api-gateway-key-hello-world
+      value: $aws-api-gateway-key-essesseff-hello-world-go-template
     - name: Content-Type
       value: application/json
 
