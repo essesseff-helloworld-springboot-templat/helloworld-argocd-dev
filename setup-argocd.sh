@@ -56,9 +56,11 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 # Apply secrets
-echo ""
-echo "📝 Applying GHCR image pull secrets..."
-kubectl apply -f ghcr-credentials-secret.yaml
+if [ -f "ghcr-credentials-secret.yaml" ]; then
+  echo ""
+  echo "📝 Applying GHCR image pull secrets..."
+  kubectl apply -f ghcr-credentials-secret.yaml
+fi
 echo ""
 echo "📝 Applying config repo secrets..."
 kubectl apply -f argocd-repository-secret.yaml
