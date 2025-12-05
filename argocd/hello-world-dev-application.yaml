@@ -7,9 +7,8 @@ metadata:
     app: hello-world
     environment: dev
     essesseff: "true"
+    essesseff.io.repositoryId: "{{REPOSITORY_ID}}"
   annotations:
-    essesseff.io/repository-id: "{{REPOSITORY_ID}}"
-    essesseff.io/environment: "dev"
     notifications.argoproj.io/subscribe.on-sync-started.webhook: webhook-hello-world
     notifications.argoproj.io/subscribe.on-sync-succeeded.webhook: webhook-hello-world
     notifications.argoproj.io/subscribe.on-sync-failed.webhook: webhook-hello-world
