@@ -133,7 +133,7 @@ else
   - on-sync-failed
   - on-deployed
   - on-health-degraded
-  selector: essesseff.io.repositoryId=${REPOSITORY_ID}"
+  selector: config-env-repo-id=${REPOSITORY_ID}"
 
   # Merge subscriptions
   if [ -z "$CURRENT_SUBSCRIPTIONS" ] || [ "$CURRENT_SUBSCRIPTIONS" = "null" ]; then
