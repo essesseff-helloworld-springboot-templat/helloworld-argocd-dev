@@ -5,13 +5,13 @@
 # Setup Argo CD for hello-world dev
 
 # This script sets up Argo CD notifications for an essesseff app
-# Template variables (hello-world, essesseff-hello-world-go-template, {{REPOSITORY_ID}}, etc.) 
+# Template variables (hello-world, essesseff-hello-world-flask-template, {{REPOSITORY_ID}}, etc.) 
 # are replaced when apps are created from templates
 
 set -e
 
 APP_NAME="hello-world"
-GITHUB_ORG="essesseff-hello-world-go-template"
+GITHUB_ORG="essesseff-hello-world-flask-template"
 ENVIRONMENT="dev"
 REPOSITORY_ID="{{REPOSITORY_ID}}"
 
